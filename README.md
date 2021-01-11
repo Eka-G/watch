@@ -1,0 +1,1 @@
+Template is available https://www.figma.com/file/f15NOQxtqbU3lKw7Yt7sbL/Templates-%2317.-More-on-Figma.info-(Copy)?node-id=1%3A15
