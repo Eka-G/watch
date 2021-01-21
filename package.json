@@ -1,0 +1,37 @@
+{
+  "name": "watch",
+  "version": "1.0.0",
+  "description": "Template is available https://www.figma.com/file/f15NOQxtqbU3lKw7Yt7sbL/Templates-%2317.-More-on-Figma.info-(Copy)?node-id=1%3A15",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eka-G/watch.git"
+  },
+  "keywords": [
+    "store",
+    "watch",
+    "commerсia",
+    "buy"
+  ],
+  "author": "Ekaterina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eka-G/watch/issues"
+  },
+  "homepage": "https://github.com/Eka-G/watch#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify-es": "^2.0.0"
+  }
+}
