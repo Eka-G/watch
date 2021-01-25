@@ -1,0 +1,117 @@
+header {
+	&__item{
+		display: flex;
+		justify-content: space-between;
+		color: #969696;
+	}
+
+	&__item--info {
+		padding: 15px 0 15px 0;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	&__item--menu {
+		max-height: 80px;
+		font-size: 14px;
+		line-height: 18px;
+		background-color: #0F0F0F;
+	}
+
+	&__contacts {
+		span {
+			position: relative;
+			margin-right: 30px;
+		}
+
+		.icon-phone:before {
+			margin-right: 15px;
+		}
+
+		span:after {
+			display: block;
+			position: absolute;
+			content: '';
+			top: -0;
+			right: -15px;
+			width: 1px;
+			height: 100%;
+			background-color: #969696;
+		}
+
+		span:last-child:after {
+			display: none;
+		}
+	}
+
+	&__identification {
+	
+		a {
+			position: relative;
+			margin-left: 10px;
+			text-decoration: none;
+			cursor: pointer;
+			color: #969696;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		a:first-child:after {
+			display: block;
+			position: absolute;
+			content: '/';
+			top: -2px;
+			right: -10px;
+		}
+
+		.icon-log-in:before {
+			position: absolute;
+			top: -10%;
+			left: -25px;
+			font-size: large;
+		}
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		max-height: 80px;
+	}
+
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-transform: uppercase;
+
+		ul {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		li {
+			padding: 30px 20px;
+		}
+
+		li:hover {
+			cursor: pointer;
+			background-color: #1F1F1F;
+		}
+	}
+
+	&__icons {
+
+		span {
+			padding-left: 20px;
+			font-size: 22px;
+			cursor: pointer;
+		}
+
+		.icon-cart {
+			padding: 0 20px 0 40px;
+		}	
+	}
+
+}

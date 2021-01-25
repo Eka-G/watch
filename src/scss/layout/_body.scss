@@ -1,0 +1,15 @@
+body {
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFF;
+    background-color: #000;
+}
+
+h1, h2, h3, h4 {
+    font-family: $headline-font;
+}
+
+.container {
+    width: 1100px;
+}
