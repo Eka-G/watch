@@ -17,9 +17,9 @@ footer.footer
 				h3.footer__title Рассылка
 				p.footer__text.footer__text--mailing.
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh.
-				form.footer__form
+				form.footer__form(id="mailing")
 					input.mailing-form(type="text" placeholder="Ваша почта")
-					button.black-button подписаться
+					button(type="submit" form="mailing").black-button подписаться
 
 	.footer__contacts
 		.container.container--footer
