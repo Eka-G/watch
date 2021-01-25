@@ -1,10 +1,10 @@
-header {
-	&__item{
+.container--header {
 		display: flex;
 		justify-content: space-between;
 		color: #969696;
 	}
 
+.header {
 	&__item--info {
 		padding: 15px 0 15px 0;
 		font-size: 12px;

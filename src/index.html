@@ -10,13 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet"/>
   </head>
   <body>
-    <section class="header col-12">
-      <div class="header__item-info col-12">
+    <header class="col-12">
+      <div class="header header__item--info col-12">
         
         
         <div class="container container--header">
-          
-          
           <div class="header__contacts">
             
             <span class="header__phone icon-phone">8 (812) 123-45-67</span>
@@ -30,12 +28,10 @@
           </div>
         </div>
       </div>
-      <div class="header__item-menu col-12">
+      <div class="header header__item--menu col-12">
         
         
         <div class="container container--header">
-          
-          
           <div class="header__logo">
             
             <img class="header__logo" src="img/logo.png" alt="PORTEN"/>
@@ -60,7 +56,38 @@
           </div>
         </div>
       </div>
-    </section>
+    </header>
+    <footer class="footer">
+      <div class="footer__info">
+        <div class="container container--footer">
+          <div class="footer__item col-4">
+            <h3 class="footer__title">О магазине</h3>
+            <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat, tellus et et sed turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et ipsum urna fames in sit mi ultrices nisi, nunc.</p>
+          </div>
+          <div class="footer__item footer__item--categories col-4">
+            <h3 class="footer__title">Категории</h3>
+            <div class="footer__buttons">
+              <button class="black-button">часы</button>
+              <button class="black-button">браслеты</button>
+              <button class="black-button">ремни</button>
+              <button class="black-button">ювелирные изделия</button>
+              <button class="black-button">запонки</button>
+            </div>
+          </div>
+          <div class="footer__item footer__item--mailing col-4">
+            <h3 class="footer__title">Рассылка</h3>
+            <p class="footer__text footer__text--mailing">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh.</p>
+            <form class="footer__form">
+              <input class="mailing-form" type="text" placeholder="Ваша почта"/>
+              <button class="black-button">подписаться</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer__contacts">
+        <div class="container container--footer"><span class="footer__copyright">© 2020 Все права защищены</span><span class="footer__editor">Сделано Figma.info</span></div>
+      </div>
+    </footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.min.js"></script>

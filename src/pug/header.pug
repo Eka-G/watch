@@ -1,46 +1,49 @@
 header.col-12
-  .header__item.header__item--info.col-12
-    |
-    |
-    .header__contacts
-      |
-      |
-      span.header__phone.icon-phone 8 (812) 123-45-67
-      |
-      |
-      span.header__schedule Работаем 7 дней в неделю
-      |
-      |
-      span.header__time 9:00 — 18:00
 
-    .header__identification
-      |
-      |
-      a.header__login.icon-log-in Войти
-      |
-      |
-      a.header__singin Регистрация
-
-  .header__item.header__item-menu.col-12
+  .header.header__item--info.col-12
     |
     |
-    .header__logo
-      |
-      |
-      img.header__logo(src="img/logo.png", alt="PORTEN")
-    .header__menu
-      |
-      |
-      .header__nav
+    .container.container--header
+      .header__contacts
         |
         |
-        ul 
-          each val in ['понравилось', 'личный кабинет', 'настройки']
-            li= val
-        .header__icons
+        span.header__phone.icon-phone 8 (812) 123-45-67
+        |
+        |
+        span.header__schedule Работаем 7 дней в неделю
+        |
+        |
+        span.header__time 9:00 — 18:00
+
+      .header__identification
+        |
+        |
+        a.header__login.icon-log-in Войти
+        |
+        |
+        a.header__singin Регистрация
+
+  .header.header__item--menu.col-12
+    |
+    |
+    .container.container--header
+      .header__logo
+        |
+        |
+        img.header__logo(src="img/logo.png", alt="PORTEN")
+      .header__menu
+        |
+        |
+        .header__nav
           |
           |
-          span.icon-cart
-          |
-          |
-          span.icon-search
+          ul 
+            each val in ['понравилось', 'личный кабинет', 'настройки']
+              li= val
+          .header__icons
+            |
+            |
+            span.icon-cart
+            |
+            |
+            span.icon-search
