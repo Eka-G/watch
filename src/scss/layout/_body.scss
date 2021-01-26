@@ -1,3 +1,4 @@
+//COMMON STYLES
 body {
 	font-family: $main-font;
 	font-size: 14px;
@@ -8,6 +9,7 @@ body {
 
 h2 {
 	@extend %h2-font;
+	position: relative;
 }
 
 h2:after {
@@ -28,10 +30,43 @@ h3 {
 }
 
 .container {
+	padding: 0;
 	width: 1110px;
 }
 
+.item {
+	font-family: $headline-font;
+	text-align: left;
+
+	&__img {
+		margin-bottom: 25px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 260px;
+		height: 325px;
+		background-color: #191B1C;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__model {
+		margin-bottom: 10px;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	&__price {
+		font-size: 16px;
+		line-height: 21px;
+	}
+}
+
 // CONTENT
+//section FIRST-SCREEN
 .first-screen {
 	padding: 160px 0 155px 0;
 	display: flex;
@@ -88,37 +123,10 @@ h3 {
 
 	&__item {
 		margin-right: 50px;
-		font-family: $headline-font;
 	}
 
 	&__item:last-child {
 		margin-right: 0;
-	}
-
-	&__img {
-		margin-bottom: 25px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 260px;
-		height: 325px;
-		background-color: #191B1C;
-	}
-
-	&__info {
-		display: flex;
-		flex-direction: column;
-	}
-
-	&__model {
-		margin-bottom: 10px;
-		font-size: 18px;
-		line-height: 24px;
-	}
-
-	&__price {
-		font-size: 16px;
-		line-height: 21px;
 	}
 
 	&__collection {
@@ -162,5 +170,24 @@ h3 {
 	&__title {
 		position: relative;
 		margin-bottom: 80px;
+	}
+}
+
+//section NEW-GOODS
+.new-goods {
+	padding-top: 120px;
+	padding-bottom: 150px;
+	text-align: center;
+
+	&__title {
+		margin-bottom: 120px;
+	}
+
+	&__products {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		column-gap: 23px;
+		row-gap: 40px;
 	}
 }
