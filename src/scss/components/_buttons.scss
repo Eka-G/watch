@@ -12,4 +12,9 @@
   color: #FFF;
   border: 2px solid #FFF;
   background-color: transparent;
+  transition: linear .2s;
+}
+
+.transparent-button:hover {
+  background-color: rgba(150, 150, 150, 0.7);
 }

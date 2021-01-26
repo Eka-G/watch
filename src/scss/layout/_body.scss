@@ -10,6 +10,19 @@ h2 {
 	@extend %h2-font;
 }
 
+h2:after {
+	position: absolute;
+	margin: auto;
+	display: block;
+	content: '';
+	bottom: -40px;
+	left: 0;
+	right: 0;
+	width: 120px;
+	height: 1px;
+	background-color: #FFF;
+}
+
 h3 {
 	@extend %h3-font;
 }
@@ -45,6 +58,7 @@ h3 {
 	}
 }
 
+//section NEW
 .new {  
 	display: flex;
 
@@ -53,16 +67,7 @@ h3 {
 	}
 
 	&__title:after {
-		position: absolute;
-		margin: auto;
-		display: block;
-		content: '';
 		bottom: -50px;
-		left: 0;
-		right: 0;
-		width: 120px;
-		height: 1px;
-		background-color: #FFF;
 	}
 
 	&__season {
@@ -130,8 +135,32 @@ h3 {
 		}
 
 		h2:after {
-			margin-bottom: 30px;
+			bottom: -30px;
 		}
 	}
+}
 
+//section LAST-COLLECTION
+.last-collection {
+	display: flex;
+
+	&__info {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__text {
+		margin-bottom: 60px;
+		max-width: 470px;
+		text-align: center;
+	}
+
+	&__title {
+		position: relative;
+		margin-bottom: 80px;
+	}
 }
