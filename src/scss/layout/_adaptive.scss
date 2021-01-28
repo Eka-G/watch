@@ -1,0 +1,341 @@
+@media (max-width: 1900px) {
+	.new {
+
+		&__img {
+			width: 190px;
+			height: 250px;
+		}
+	}
+}
+
+@media (max-width: 1400px) {
+	.new {
+		flex-direction: column;
+		align-items: center;
+
+		&__img {
+			width: 260px;
+			height: 325px;
+		}
+
+		&__collection {
+			box-shadow: 0 0 55px #A9A9A9;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.container {
+		width: 900px;
+	}
+
+	.last-collection {
+		flex-direction: column-reverse;
+
+		&__info {
+			padding-bottom: 50px;
+		}
+
+		&__img {
+			justify-content: center;
+
+			img {
+				box-shadow: 0 0 55px #A9A9A9;
+			}
+		}
+	}
+
+	.new-goods {
+    padding-top: 50px;
+		padding-bottom: 100px;
+		
+		&__products {
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+		}
+	}
+
+	.our-brands__list {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.footer {
+
+		&__text {
+			max-width: 250px;
+		}
+		
+		&__item--categories {
+			padding-left: 0;
+		}
+
+		&__item--mailing {
+			margin-top: 30px;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+
+	h2 {
+		font-size: 30px;
+    line-height: 24px;
+	}
+
+	.container {
+		width: 650px;
+	}
+
+	.header {
+		&__nav li {
+			padding: 20px 10px;
+		}
+
+		&__icons {
+			.icon-cart {
+				padding: 0 0 0 20px;
+			}
+		}
+	}
+
+	.first-screen {
+		padding: 100px 0 80px 0;
+
+		&__text {
+			max-width: 600px;
+		}
+	}
+
+	.new {
+
+		&__item {
+			margin: 0 20px 30px 0;
+		}
+
+		.item__img {
+			justify-content: space-around;
+			width: auto;
+			height: auto;
+		}
+	}
+
+	.last-collection {
+
+		&__info {
+			padding: 70px 0;
+		}
+
+		&__title{
+			margin-bottom: 40px;
+		}
+
+		&__title:after {
+			bottom: -20px;
+		}
+	}
+
+	.new-goods {
+
+		&__title {
+			margin-bottom: 60px;
+		}
+
+		&__title:after {
+			bottom: -30px;
+		}
+
+		&__products {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr;
+		}
+	}
+
+	.footer {
+
+		.container--footer {
+			flex-wrap: wrap;
+		}
+
+		&__title {
+			margin-bottom: 20px;
+		}
+
+		&__text {
+			max-width: 300px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 500px;
+	}
+
+	.header {
+		.container--header {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		&__contacts {
+			margin-bottom: 10px;
+		}
+
+		&__logo {
+			display: none;
+		}
+	}
+
+	.new {
+		
+
+		&__season {
+			padding: 50px 100px;
+		}
+
+		&__products {
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+
+	.first-screen__text {
+    	max-width: 500px;
+	}
+
+	.footer {
+
+		&__item {
+		margin: 0 0 30px 0;
+		}
+		
+		&__item--about {
+			padding-right: 20px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	h2 {
+		font-size: 22px;
+	}
+
+	.container {
+		width: 300px;
+	}
+
+	.item__img {
+		padding: 10px;
+		margin-bottom: 10px;
+		width: auto;
+		height: auto;
+	}
+
+	.header {
+
+		.container--header {
+			flex-direction: row;
+			align-items: center;
+		}
+
+		&__item--info {
+			padding: 10px 0;
+			font-size: 10px;
+		}
+		
+		&__contacts {
+			margin-bottom: 0;
+			
+			span:not(:first-child),
+			span:after {
+				display: none;
+			}
+		}
+
+		&__menu {
+			padding: 10px 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+		}
+
+		&__menu-burger {
+			display: block;
+		}
+
+		&__menu-burger:before, 
+		&__menu-burger:after {
+			display: block;
+		}
+		
+		&__nav {
+			
+			.top-menu {
+				display: none;
+				
+			}
+
+			li {
+				padding: 5px;
+				font-size: 10px;
+			}
+		}
+	}
+
+	.first-screen {
+		padding: 50px 0;
+
+		&__logo {
+			margin-bottom: 40px;
+			width: 250px;
+			height: 250px;
+		}
+
+		&__text {
+			max-width: 80%;
+			font-size: 14px;
+		}
+	}
+
+	.new {
+
+		&__products {
+			flex-direction: column;
+		}
+
+		&__collection {
+			padding: 30px;
+		}
+	}
+
+	.new-goods {
+
+		&__products {
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(8, 1fr);
+		}
+	}
+
+	.footer {
+
+		&__info {
+			.container--footer {
+				padding: 50px 20px;
+			}
+		}
+
+		&__form {
+			flex-direction: column;
+
+			button {
+				width: 210px;
+			}
+		}
+
+		&__contacts {
+			font-size: 10px;
+		}
+	}
+}

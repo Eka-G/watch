@@ -80,16 +80,47 @@
 		max-height: 80px;
 	}
 
+	&__menu-burger {
+		display: none;
+		position: relative;
+		width: 30px;
+		height: 3px;
+		background-color: #FFF;
+	}
+
+	&__menu-burger:before, 
+	&__menu-burger:after {
+		position: absolute;
+		display: none;
+		content: '';
+		top: -10px;
+		left: 0;
+		width: 30px;
+		height: 3px;
+		background-color: #FFF;
+	}
+
+	&__menu-burger:after {
+		top: 10px;
+	}
+
 	&__nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		text-transform: uppercase;
 
-		ul {
+		.top-menu {
 			margin: 0;
 			display: flex;
 			justify-content: space-between;
+		}
+
+		.top-menu--active {
+			display: flex;
+			padding: 0;
+			flex-direction: column;
+			align-items: start;
 		}
 
 		li {

@@ -9,6 +9,9 @@
 	'base/normalize.css';
 
 @import
+	'vendors/bootstrap.min.css';	
+
+@import
 	'components/buttons',
 	'components/forms',
 	'components/nav',
@@ -17,7 +20,6 @@
 @import
 	'layout/body',
 	'layout/footer',
-	'layout/header';
-
-@import
-	'vendors/bootstrap.min.css';
+	'layout/header',
+	'layout/adaptive';
+	
