@@ -1,3 +1,7 @@
+'use strict';
+
 $(document).ready(function() {
-    //test
+    $('.header__menu-burger').on('click', function(error) {
+        $('.top-menu').toggleClass('top-menu--active');
+    })
 })

@@ -243,6 +243,10 @@
 			padding: 10px 0;
 			font-size: 10px;
 		}
+
+		&__item--menu {
+			max-height: none;
+		}
 		
 		&__contacts {
 			margin-bottom: 0;
@@ -271,10 +275,22 @@
 		}
 		
 		&__nav {
+			width: 80%;
 			
 			.top-menu {
 				display: none;
 				
+				li {
+					text-align: left;
+					width: 100%;
+				}
+			}
+
+			.top-menu--active {
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: start;
 			}
 
 			li {
